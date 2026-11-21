@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Cobra RGB
+Comment=Configura o LED do mouse Redragon Cobra
+Exec=cobra-rgb gui
+Icon=io.github.jpmelo031.CobraRGB
+Terminal=false
+Categories=Settings;HardwareSettings;
+Keywords=redragon;mouse;rgb;led;cobra;
+StartupNotify=true

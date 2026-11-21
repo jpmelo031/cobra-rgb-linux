@@ -1,0 +1,9 @@
+post_install() {
+  # o pacman ja recarrega as regras do udev; o trigger aplica a permissao no mouse que ja ta plugado
+  udevadm trigger --subsystem-match=hidraw --action=change 2>/dev/null || true
+  echo ":: Cobra RGB instalado. Se der erro de permissão, tira e pluga o mouse de novo."
+}
+
+post_upgrade() {
+  post_install
+}

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cobra-rgb"
+version = "0.1.0"
+description = "Configurador de LED pro mouse Redragon Cobra (USB 04D9:FC62) no Linux"
+readme = "README.md"
+requires-python = ">=3.10"
+# a interface usa o PyGObject + GTK4 do sistema (pacman -S python-gobject gtk4); a linha de comando nao precisa de nada
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/jpmelo031/cobra-rgb-linux"
+
+[project.scripts]
+cobra-rgb = "cobra_rgb.cli:main"
+
+[tool.setuptools]
+packages = ["cobra_rgb"]

@@ -1,0 +1,10 @@
+__pycache__/
+*.egg-info/
+build/
+dist/
+
+# makepkg
+/src/
+/pkg/
+/cobra-rgb-linux/
+*.pkg.tar.*

@@ -1,0 +1,4 @@
+# Cobra RGB: deixa o usuario logado na sessao acessar o mouse pelo hidraw, sem precisar de root.
+# Redragon King Cobra (04D9:FC62) e Cobra M711 (04D9:FC30), chip Holtek.
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="04d9", ATTRS{idProduct}=="fc62", TAG+="uaccess"
+SUBSYSTEM=="hidraw", ATTRS{idVendor}=="04d9", ATTRS{idProduct}=="fc30", TAG+="uaccess"
