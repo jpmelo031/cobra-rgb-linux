@@ -88,6 +88,8 @@ em qualquer máquina, sem o mouse.
 
 ## Estado
 
-- O protocolo foi testado num King Cobra de verdade, pela versão Windows do Cobra RGB, que manda os mesmos comandos.
-- O acesso por hidraw e a interface GTK4 ainda não rodaram num Linux de verdade. Se algo der errado, abre uma issue
-  com a saída de `cobra-rgb status`.
+- O protocolo foi testado primeiro num King Cobra de verdade pela versão Windows do Cobra RGB, que manda os mesmos comandos.
+- Testado no Linux com um King Cobra (`04D9:FC62`) no Arch com Hyprland (Wayland): instalação com `makepkg -si`,
+  acesso ao hidraw sem root pela regra do udev, `status`, `aplicar` e a interface GTK4. O LED troca na hora.
+- O Cobra M711 clássico (`04D9:FC30`) ainda não foi testado. Se algo der errado, abre uma issue com a saída de
+  `cobra-rgb status`.
